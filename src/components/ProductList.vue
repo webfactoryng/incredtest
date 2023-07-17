@@ -1,4 +1,5 @@
 <template>
+  <div id="indicator">CSV created! Uploading to server in 5secs...</div>
   <ProductForm />
   <ExportButton @click="exportToCSV" />
   <div class="p-4">
@@ -58,6 +59,8 @@ export default {
   },
   methods: {
     exportToCSV() {
+      const showIndicator = document.getElementById("indicator");
+      showIndicator.style.display = "block";
       const rows = this.products.map((product) => [
         product.id,
         product.title,
@@ -72,7 +75,8 @@ export default {
 
       //Delay for 5 seconds
       setTimeout(() => {
-        alert(encodedURI);
+        showIndicator.style.display = "none";
+        // alert(encodedURI);
         // Usin WebSocket to send the file to the server
         const socket = new WebSocket("ws://localhost:8181/socket");
         socket.onopen = () => {
