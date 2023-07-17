@@ -1,2 +1,2 @@
 # incredtest
-This is a product listing system with MySQL database. It allows users to enter and list products, export them as CSV files. The exported CSV is automatically uploaded to a remote server after a 5-second delay using WebSocket.
+A product listing system with MySQL DB. Users enter/list products, export as CSV. CSV auto-uploaded to remote server (5s delay) via WebSocket. Built with Vue.js, Tailwind CSS, PHP, and MySQL
