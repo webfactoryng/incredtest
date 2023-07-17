@@ -1,4 +1,4 @@
-# incredevent
+# incredtest
 
 ## Project setup
 ```
