@@ -78,7 +78,7 @@ export default {
         showIndicator.style.display = "none";
         // alert(encodedURI);
         // Usin WebSocket to send the file to the server
-        const socket = new WebSocket("ws://localhost:8181/socket");
+        const socket = new WebSocket("ws://localhost:8181/socket/socket.php");
         socket.onopen = () => {
           socket.send(encodedURI);
           socket.close();
