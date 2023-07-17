@@ -1,2 +1,24 @@
-# incredtest
-A product listing system with MySQL DB. Users enter/list products, export as CSV. CSV auto-uploaded to remote server (5s delay) via WebSocket. Built with Vue.js, Tailwind CSS, PHP, and MySQL
+# incredivent
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

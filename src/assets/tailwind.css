@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --incrediorange-color: #ee7c32;
+  --incredigreen-color:#56b669;
+  --incredigrey-color:#222429;
+}
+body {
+  background-color: #fff;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 0px;
+}
+
+.caution-text {
+  color: var(--incrediorange-color);
+}
+.button-bg{
+    background-color: var(--incredigreen-color);
+}
+.header-bg{
+  background-color: var(--incredigrey-color);
+}
+.pentry{
+  font-size: 25px;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 16px;
+  padding-top: 7px;
+}
+.prod-entry{
+  display:none;
+  position: absolute;
+  width:90vw;
+  left:50%;
+  top:30px;
+  margin-left:-45vw;
+  background-color:rgb(34 36 42);
+  border-radius:10px;
+  padding-top:0px;
+  padding-bottom:10px;
+  z-index: 10;
+  color:#ee7c32;
+
+
+
+}
