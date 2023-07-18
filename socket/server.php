@@ -43,9 +43,11 @@ class iSocketServer implements MessageComponentInterface
 $server = IoServer::factory(
     new HttpServer(
         new WsServer(
-            new iWebSocketServer()
+            new iSocketServer()
         )
     ),
     8181
 );
+// Start notice
+echo "Socket server started on port 8181\n";
 $server->run();
