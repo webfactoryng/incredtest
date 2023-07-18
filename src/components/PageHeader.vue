@@ -120,6 +120,9 @@ export default {
         this.product.price = null;
 
         this.isAddProductFormVisible = false;
+
+        // Reload document (there are better ways to do this. but permit this for this time )
+        location.reload();
       } catch (error) {
         console.error(error);
         alert("Error submitting form. Please try again.");
